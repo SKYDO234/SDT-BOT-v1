@@ -6,9 +6,9 @@ Get a public IPv4 address for your VPS directly through Discord instead of using
 
 # 🌐 Tailscale Powered • ⚡ Fast • 🔐 Secure • 🤖 Discord Based
 
-! [Python] (https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
-! [Discord](https://img.shields.io/badge/Discord-Bot-5865F2?style=for-the-badge&logo=discord)
-! [Linux] (https://img.shields.io/badge/Linux-Ubuntu%20%7C%20Debian-black?style=for-the-badge&logo=linux)
+![Python] (https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
+![Discord](https://img.shields.io/badge/Discord-Bot-5865F2?style=for-the-badge&logo=discord)
+![Linux] (https://img.shields.io/badge/Linux-Ubuntu%20%7C%20Debian-black?style=for-the-badge&logo=linux)
 ! [Tailscale](https://img.shields.io/badge/Tailscale-IPv4-blue?style=for-the-badge)
 
 </div>---
