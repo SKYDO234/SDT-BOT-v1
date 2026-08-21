@@ -40,9 +40,18 @@ Other Linux Distributions| ⚠️
 
 # 👤 Commands
 
-SDT-BOT V1 provides Discord commands for interacting with the VPS and its networking system.
-
-«The exact commands available depend on the version of the bot installed.»
+User Commands (Available to everyone)
+``$myvps``
+Description: Lists all active VPS instances assigned to your Discord account.
+Displays: Instance ID, OS, CPU allocation, RAM, Disk space, Tailscale IPv4 address, SSH username (root), and root password.
+``$manage``
+Description: Displays an informational management panel explaining how to view and inspect your active instances.
+``$about``
+Description: Displays general engine information, including supported OS distributions (Ubuntu 20.04/22.04, Debian 10/11/12/13) and system architecture.
+Admin Commands (Restricted to server administrators & configured ADMIN_IDS)
+``$create <ram> <cpu> <disk> <os> <user>``
+Usage Example: $create 2g 1 10g Ubuntu22.04 @User
+Description: Builds and provisions a brand-new containerized VPS. It handles resource limits, installs dependencies, configures SSH with password authentication, authenticates Tailscale via Auth Key, logs the VPS in the database, and sends the user their SSH login details via Direct Message.
 
 ---
 
@@ -50,30 +59,30 @@ SDT-BOT V1 provides Discord commands for interacting with the VPS and its networ
 
 1️⃣ Clone Repository
 
-git clone https://github.com/SKYDO234/SDT-BOTV1
-cd SDT-BOTV1
+``git clone https://github.com/SKYDO234/SDT-BOTV1
+cd SDT-BOTV1``
 
 2️⃣ Update Packages
 
-apt update
+``apt update``
 
 3️⃣ Install Pip
 
-apt install pip
+``apt install pip``
 
 4️⃣ Install Python Requirements
 
 Run:
 
-pip install -r requirements.txt
+``pip install -r requirements.txt``
 
 If you get a breaking system packages / externally-managed-environment error, run:
 
-python3 -m pip install --break-system-packages -r requirements.txt
+``python3 -m pip install --break-system-packages -r requirements.txt``
 
 ---
 
-⚙️ Configuration
+# ⚙️ Configuration
 
 After installing the requirements, open:
 
@@ -87,7 +96,7 @@ TAILSCALE_AUTH_KEY
 
 ---
 
-👑 How To Get Admin ID
+# 👑 How To Get Admin ID
 
 1. Open your Discord server.
 2. Open your Discord profile.
@@ -99,15 +108,15 @@ TAILSCALE_AUTH_KEY
 
 ---
 
-🤖 How To Get Discord Bot Token
+# 🤖 How To Get Discord Bot Token
 
-1️⃣ Open Discord Developer Portal
+# 1️⃣ Open Discord Developer Portal
 
 Go to:
 
 https://discord.com/developers/applications
 
-2️⃣ Create Your Bot
+# 2️⃣ Create Your Bot
 
 1. Create a new application.
 2. Open the Bot tab.
@@ -123,11 +132,11 @@ https://discord.com/developers/applications
 
 🌐 How To Get Tailscale Auth Key
 
-1️⃣ Open Tailscale
+# 1️⃣ Open Tailscale
 
 Open the Tailscale website and log into your account.
 
-2️⃣ Open Settings
+# 2️⃣ Open Settings
 
 1. Click the three-line menu.
 2. Open Settings.
@@ -147,7 +156,7 @@ Open the Tailscale website and log into your account.
 
 After configuring "config.json", start SDT-BOT V1 with:
 
-python3 bot.py
+``python3 bot.py``
 
 If the configuration is correct, the bot will start and connect to Discord.
 
