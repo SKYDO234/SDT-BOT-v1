@@ -25,7 +25,7 @@ logging.basicConfig(
     ]
 )
 
-CONFIG_FILE = "config.json"
+CONFIG_FILE = "config2.json"
 DB_FILE = "vps_db.json"
 
 # Load / Initialize Configuration
