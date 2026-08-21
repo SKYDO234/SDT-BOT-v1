@@ -1,8 +1,8 @@
 {
-    "TOKEN": "YOUR_DISCORD_BOT_TOKEN_HERE",
+    "TOKEN": "",
     "PREFIX": "$",
-    "ADMIN_IDS": [],
+    "ADMIN_IDS": [1495728436495384688],
     "ANTINUKE_ENABLED": true,
     "DEFAULT_DATA_DIR": "./vps_data",
-    "TAILSCALE_AUTHKEY": "tskey-auth-YOUR_TAILSCALE_AUTH_KEY_HERE"
+    "TAILSCALE_AUTHKEY": "tskey-auth-k9xNwSgrBN11CNTRL-f3Y2sc5BMaN17QQtJjhfZNVk21bdqU5bR"
 }
